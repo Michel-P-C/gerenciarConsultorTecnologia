@@ -1,6 +1,6 @@
 package equipe;
 
-import consultor.Consultor;
+import consultorAbstract.Consultor;
 
 import java.util.ArrayList;
 import java.util.Collections;

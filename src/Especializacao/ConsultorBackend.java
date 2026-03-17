@@ -1,6 +1,6 @@
 package Especializacao;
 
-import consultor.Consultor;
+import consultorAbstract.Consultor;
 
 public class ConsultorBackend extends Consultor {
     //construtor

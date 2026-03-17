@@ -1,6 +1,6 @@
 package Especializacao;
 
-import consultor.Consultor;
+import consultorAbstract.Consultor;
 
 public class ConsultorDados extends Consultor {
     public ConsultorDados(String nome, String nivel) {

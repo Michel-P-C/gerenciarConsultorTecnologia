@@ -3,7 +3,7 @@ package menu;
 import Especializacao.ConsultorBackend;
 import Especializacao.ConsultorDados;
 import Especializacao.ConsultorFrontend;
-import consultor.Consultor;
+import consultorAbstract.Consultor;
 import equipe.Equipe;
 
 import java.util.HashMap;

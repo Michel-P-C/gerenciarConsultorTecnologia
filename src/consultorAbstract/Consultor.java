@@ -1,4 +1,4 @@
-package consultor;
+package consultorAbstract;
 
 public abstract class Consultor implements Comparable<Consultor> {
 
