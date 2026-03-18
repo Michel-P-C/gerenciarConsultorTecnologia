@@ -37,24 +37,24 @@ public class Principal {
                 case 1:
                     //adicionar uma equipe
                     System.out.println("Nome da equipe: ");
-                    String nomeEquipe = scan.nextLine();
+                    var nomeEquipe = scan.nextLine();
 
                     Equipe novaEquipe = new Equipe(nomeEquipe);
                     equipes.put(nomeEquipe, novaEquipe);
 
 
                     System.out.println("Deseja adiciona um consultor agora? (S/N)");
-                    String resp = scan.nextLine();
+                    var resp = scan.nextLine();
 
                     if (resp.equalsIgnoreCase("s")){
                         System.out.println("Nome do consultor");
-                        String nome = scan.nextLine();
+                        var nome = scan.nextLine();
 
                         System.out.println("Especialidade (Backend / Frontend/ Dados): ");
-                        String esp = scan.nextLine();
+                        var esp = scan.nextLine();
 
                         System.out.printf("Nivel (Júnior / Pleno / Sênior ): ");
-                        String nivel = scan.nextLine();
+                        var nivel = scan.nextLine();
 
                         Consultor c = null;
 
@@ -80,12 +80,12 @@ public class Principal {
                     }
 
                     System.out.println("Equipes disponível: ");
-                    for (String nomeEp : equipes.keySet()){
+                    for (var nomeEp : equipes.keySet()){
                         System.out.println("_ " + nomeEp);
                     }
 
                     System.out.println("Digite o nome da equipe: ");
-                    String equipeNome = scan.nextLine();
+                    var equipeNome = scan.nextLine();
 
                     Equipe equipe = equipes.get(equipeNome);
 
@@ -95,13 +95,13 @@ public class Principal {
                     }
 
                     System.out.println("Nome do consultor: ");
-                    String nome = scan.nextLine();
+                    var nome = scan.nextLine();
 
                     System.out.println("ESPECIALIDADE (Backend / Frontend / Dados ");
-                    String esp = scan.nextLine();
+                    var esp = scan.nextLine();
 
                     System.out.println("NIVEL (Júnior / Pleno / Sênior)");
-                    String nivel = scan.nextLine();
+                    var nivel = scan.nextLine();
 
                     Consultor c = null;
 
@@ -123,7 +123,7 @@ public class Principal {
 
                 case 3:
                     System.out.println("Nome da Equipe: ");
-                    String busca = scan.nextLine();
+                    var busca = scan.nextLine();
 
                     Equipe equi = equipes.get(busca);
 
@@ -160,7 +160,7 @@ public class Principal {
                     break;
                 case 5:
                     System.out.println("nome da equipe excluir: ");
-                    String excluir = scan.nextLine();
+                    var excluir = scan.nextLine();
 
                     if (equipes.containsKey(excluir)){
                         equipes.remove(excluir);
