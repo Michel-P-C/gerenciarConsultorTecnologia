@@ -53,7 +53,7 @@ public class Principal {
                         System.out.println("Especialidade (Backend / Frontend/ Dados): ");
                         var esp = scan.nextLine();
 
-                        System.out.printf("Nivel (Júnior / Pleno / Sênior ): ");
+                        System.out.println("Nível (Júnior / Pleno / Sênior ): ");
                         var nivel = scan.nextLine();
 
                         Consultor c = null;
